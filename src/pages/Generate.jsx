@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default function Generate(){
     return(
     <GenerateLayout>
-        
+        Generate
     </GenerateLayout>
     )
 }

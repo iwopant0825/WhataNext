@@ -9,10 +9,10 @@ function App() {
   return (
     <Layout>
       <Header />
-      <Home />
-      <About />
-      <How/>
-      <Generate/>
+      <Section id="home"><Home /></Section>
+      <Section id="about"><About /></Section>
+      <Section id="how"><How /></Section>
+      <Section id="generate"><Generate /></Section>
     </Layout>
   );
 }
@@ -20,6 +20,10 @@ function App() {
 const Layout = styled.div`
   width: 100%;
   height: 100%;
+`;
+
+const Section = styled.div`
+  
 `;
 
 export default App;
