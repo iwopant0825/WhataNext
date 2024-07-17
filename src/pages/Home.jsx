@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 export default function Home() {
   return (
-    <HomeLayout id="home" >
+    <HomeLayout id="home">
       <HomeContext>
-      What’s NEXT
+        <HomeContext2>내가 소설을 만들 수 있다고?</HomeContext2>
+        What’s NEXT
       </HomeContext>
       <HomeButtonLayout to="generate" smooth={true} duration={500}>
         <HomeButton>Start generate &gt;</HomeButton>
@@ -21,10 +22,21 @@ const HomeLayout = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(288deg, #B0DAFF 0%, #94CDFF 11.87%, #26C0F7 25.07%, #27BCF7 39.31%, #2DA4F8 53.71%, #3097F9 66.77%, #3583FA 80.11%, #377CFB 90.64%, #377CFB 100%);
+  background: linear-gradient(
+    288deg,
+    #b0daff 0%,
+    #94cdff 11.87%,
+    #26c0f7 25.07%,
+    #27bcf7 39.31%,
+    #2da4f8 53.71%,
+    #3097f9 66.77%,
+    #3583fa 80.11%,
+    #377cfb 90.64%,
+    #377cfb 100%
+  );
 `;
 const HomeContext = styled.div`
-  color: #FBFFF1;
+  color: #fbfff1;
   text-align: center;
   font-size: 80px;
   font-style: normal;
@@ -32,6 +44,17 @@ const HomeContext = styled.div`
   line-height: normal;
   margin-bottom: 50px;
   display: flex;
+  flex-direction: column;
+  align-items: start;
+`;
+const HomeContext2 = styled.div`
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 20px;
 `;
 const HomeButtonLayout = styled(Link)`
   width: 224px;
@@ -41,13 +64,13 @@ const HomeButtonLayout = styled(Link)`
   justify-content: center;
   align-items: center;
   border-radius: var(--Radius-12, 12px);
-  cursor: pointer; 
+  cursor: pointer;
 `;
 const HomeButton = styled.div`
-color: #09ADEC;
-text-align: center;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #09adec;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 `;
